@@ -1,2 +1,2 @@
 # Apex-mnist
-Automate mnist
+Automate mnist using ACMS Apex.
