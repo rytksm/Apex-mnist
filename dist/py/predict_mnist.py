@@ -18,8 +18,6 @@ from chainer.training import extensions
 import numpy as np
 from PIL import Image, ImageOps
 
-
-
 # Network definition
 class MLP(chainer.Chain):
 
@@ -42,10 +40,8 @@ def loadPredImg(path):
     img = img.resize((28,28))
     img = ImageOps.invert(img)
     img = img.convert('L')
-    #img.save('pred.jpg','JPEG', quality=100, optimize=True)
     img = np.asarray(img).reshape( 1, 28, 28)
     # flatten
-    #img = img.reshape(len(img), 784)
     img = img.reshape(784)
     # normalize
     img = img.astype(np.float32) / 255.0
@@ -64,7 +60,8 @@ def main():
                         help='Model made by train_mnist.py')
     args = parser.parse_args()
 
-    print('# unit: {}'.format(args.unit))
+    # Print parameters
+    print('# of units: {}'.format(args.unit))
     print('image file: ', args.image)
     print('model file: ', args.model)
     print('')
@@ -72,26 +69,22 @@ def main():
     # Set up a neural network
     model = L.Classifier(MLP(args.unit, 10))
 
-    # Load the MNIST dataset
-    train, test = chainer.datasets.get_mnist()
-
+    # Load model file
     mdl = 'my_mnist.model'
     if len(args.model) > 0:
         mdl = args.model
     chainer.serializers.load_npz(mdl, model)
 
-    x, t = test[2]
+    # Load image file
     if len(args.image) > 0:
         x, t = loadPredImg(args.image)
 
-    #print(x.shape)
-    #print(t.shape)
-    #print('label:', t)
-
+    # Run prediction
     x = x[None, ...]
     y = model.predictor(x)
     y = y.data
 
+    # Print result
     print('predicted_label:', y.argmax(axis=1)[0])
 
 if __name__ == '__main__':
