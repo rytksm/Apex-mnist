@@ -2,8 +2,16 @@
 
 ## export
 
+呼び出し方
+
 ```shell
 $ export.sh <operator_id> <password>
+```
+
+例
+
+```shell
+$ export.sh mnister mnist123
 ```
 
 ## import
