@@ -1,6 +1,1 @@
-fileDistributionId=DIST_ANY,prevSyncTime=2019-02-08 13:19:40.780 +0900,nodeId=249-apex-01-mst,lastSyncTime=2019-03-05 19:30:16.258 +0900,directory=/home/acms/APEX_DIST/ANY
-fileDistributionId=DIST_BAT,prevSyncTime=2019-02-08 14:17:22.539 +0900,nodeId=249-apex-01-mst,lastSyncTime=2019-03-05 19:30:16.467 +0900,directory=/home/acms/APEX_DIST/BAT
-fileDistributionId=GoogleCloudVisionAPI,prevSyncTime=2019-03-11 17:51:04.698 +0900,nodeId=249-apex-01-mst,lastSyncTime=2019-03-11 17:53:38.274 +0900,directory=/home/acms/GoogleCloudVisionAPI/
 fileDistributionId=mnist,prevSyncTime=2019-02-08 13:19:41.394 +0900,nodeId=249-apex-01-mst,lastSyncTime=2019-03-05 19:30:17.433 +0900,directory=/home/acms/chainer
-fileDistributionId=TE_SWX_STD:FD_STD_ANY,prevSyncTime=2019-04-05 16:33:45.233 +0900,nodeId=249-apex-01-mst,lastSyncTime=2019-04-05 16:38:13.588 +0900,directory=//LD_SWX/std/dist/any
-fileDistributionId=TE_SWX_STD:FD_STD_SCRIPT,prevSyncTime=2019-04-05 16:33:45.326 +0900,nodeId=249-apex-01-mst,lastSyncTime=2019-04-05 16:38:13.657 +0900,directory=//LD_SWX/std/dist/script
