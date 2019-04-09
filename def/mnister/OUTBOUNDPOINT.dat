@@ -1,0 +1,1 @@
+outboundPointId=ZTCP_5021,workingGroup=MNIST業務,lendable=false,secondaryNodeId=NoSet,secondaryBindIpAddress=NoSet,proxyUserId=NoSet,proxyUse=false,proxyPort=8080,proxyPasswd=****************,proxyHost=NoSet,proxyAuth=false,protocolId=ZEN_TCP,nodeId=249-apex-01-mst,bindIpAddress=NoSet
